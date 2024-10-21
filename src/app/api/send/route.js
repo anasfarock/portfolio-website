@@ -1,10 +1,12 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import { renderToReadableStream } from "react-dom/server"; // This may need to be imported explicitly if you're using it
+
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 const fromEmail = process.env.FROM_EMAIL;
 
-export async function POST(req) {
+export async function POST(req, res) {
   const { email, subject, message } = await req.json();
   console.log(email, subject, message);
   try {
@@ -23,7 +25,6 @@ export async function POST(req) {
     });
     return NextResponse.json(data);
   } catch (error) {
-    console.error(error); // Log the error for debugging
-    return NextResponse.json({ error: error.message });
+    return NextResponse.json({ error });
   }
 }
