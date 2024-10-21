@@ -1,7 +1,7 @@
 "use client";
 import Link from 'next/link'
 import React, { useState } from 'react'
-import NavLink from './Navlink'
+import Navlink from './Navlink'
 import {Bars3Icon, XMarkIcon, XmarkIcon} from "@heroicons/react/24/solid"
 import MenuOverlay from './MenuOverlay';
 const navLinks = [
@@ -27,7 +27,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
         <div className="flex flex-wrap items-center justify-between mx-auto px-4 py-2">
             <Link href={"/"} className="text-2xl md:text-5xl text-white font-semibold">
-            LOGO
+            AF
             </Link>
             <div className="mobile-menu block md:hidden">
                 {
@@ -47,7 +47,7 @@ const Navbar = () => {
                     {
                         navLinks.map((link, index) => (
                             <li key={index}>
-                                <NavLink href={link.path} title={link.title} />
+                                <Navlink href={link.path} title={link.title} />
                             </li>
                         ))
                         
