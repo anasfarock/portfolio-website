@@ -1,7 +1,5 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
-import { renderToReadableStream } from "react-dom/server"; // This may need to be imported explicitly if you're using it
-
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 const fromEmail = process.env.FROM_EMAIL;
