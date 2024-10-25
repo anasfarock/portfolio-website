@@ -1,3 +1,4 @@
+import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY); // Make sure RESEND_API_KEY is in .env
