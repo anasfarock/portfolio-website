@@ -28,10 +28,15 @@ const Navbar = () => {
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
       <Link
   href="/"
-  className="text-2xl md:text-5xl text-white font-semibold"
+  className="flex items-center"
 >
-  <img src="/images/logo.png" alt="Anas Farooq Logo" className="h-8 w-8 md:h-10 md:w-10" />
+  <img 
+    src="/images/logo.png" 
+    alt="Anas Farooq Logo" 
+    className="w-[150px] h-auto md:w-[200px]" 
+  />
 </Link>
+
 
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
