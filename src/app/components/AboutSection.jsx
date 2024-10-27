@@ -23,8 +23,8 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>SZABIST, Islamabad</li>
+        <li>Punjab Group of Colleges</li>
       </ul>
     ),
   },
@@ -33,8 +33,8 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>JPMorgan Chase - Investment Banking Job Simulation</li>
+        <li>Moreton Bay Regional Council - Entrepreneurship and Innovation Job Simulation</li>
       </ul>
     ),
   },
