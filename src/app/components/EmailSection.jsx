@@ -14,6 +14,7 @@ const EmailSection = () => {
 		e.preventDefault();
 		setError(""); // Reset any previous errors
 
+		
 		const data = {
 			email: e.target.email.value,
 			subject: e.target.subject.value,
