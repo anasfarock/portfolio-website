@@ -19,18 +19,19 @@ export async function POST(req) {
 			text: `You have received a new message from ${email}.\n\nMessage:\n${message}`,
 		};
 
+		// Use async/await to handle the promise properly
 		const info = await transporter.sendMail(mailOptions);
 
+		// Return a success response once email is sent
 		return new Response(
 			JSON.stringify({ success: true, message: "Email sent", info }),
 			{ status: 200 }
 		);
 	} catch (error) {
+		// Return a failure response if any error occurs
 		return new Response(
 			JSON.stringify({ success: false, message: "Email not sent", error }),
 			{ status: 500 }
 		);
 	}
 }
-
-
