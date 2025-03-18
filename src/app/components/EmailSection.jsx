@@ -59,7 +59,7 @@ const EmailSection = () => {
       <style jsx>{`
         @media (max-width: 768px) {
           section#contact {
-            margin-bottom: 48px;
+            padding-bottom: 12px; /* Reduced bottom padding */
           }
         }
       `}</style>
@@ -68,6 +68,7 @@ const EmailSection = () => {
 };
 
 export default EmailSection;
+
 
 
 // Code in case of future development and Mailing Feature in the Website
