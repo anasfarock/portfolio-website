@@ -10,8 +10,9 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>C++</li>
+        <li>Python</li>
         <li>JavaScript</li>
-        <li>Node.js</li>
+        <li>React.js</li>
       </ul>
     ),
   },
@@ -30,6 +31,8 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
+        <li>Programming with Python 3.X - Simplilearn</li>
+        <li>An Introduction to Forex Trading - Alison</li>
         <li>JPMorgan Chase - Investment Banking Job Simulation</li>
         <li>Moreton Bay Regional Council - Entrepreneurship and Innovation Job Simulation</li>
       </ul>
