@@ -4,15 +4,15 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="footer border-t border-[#33353F] bg-[#121212] text-white">
-      <div className="container mx-auto px-4 py-6 flex justify-between items-center">
+      <div className="container mx-auto px-4 py-6 flex flex-col sm:flex-row justify-between items-center">
         <Image
           src="/images/logo.png"
           alt="Anas Farooq Logo"
           width={150}
           height={50}
-          className="md:w-[200px] h-auto"
+          className="w-[120px] sm:w-[150px] md:w-[200px] h-auto mb-2 sm:mb-0"
         />
-        <p className="text-slate-400">All rights reserved.</p>
+        <p className="text-slate-400 text-center sm:text-left">All rights reserved.</p>
       </div>
     </footer>
   );
