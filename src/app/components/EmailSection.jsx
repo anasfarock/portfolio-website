@@ -12,25 +12,27 @@ const EmailSection = () => {
       id="contact"
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
     >
-      <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#A68A64] to- rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-y-1/2"></div>
+      {/* Background Gradient Effect */}
+      <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#A68A64] to-[#355E0D] rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-y-1/2"></div>
 
+      {/* Let's Connect Section */}
       <div className="z-10">
         <h5 className="text-xl font-bold text-white my-2">Let&apos;s Connect</h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
-          I&apos;m currently looking for new opportunities, my inbox is always open. 
-          Whether you have a question or just want to say hi, I&apos;ll try my best to get 
-          back to you!
+          I&apos;m currently looking for new opportunities, and my inbox is always open. 
+          Feel free to reach out, and I&apos;ll get back to you as soon as possible!
         </p>
-        <div className="socials flex flex-row gap-2">
+        <div className="socials flex flex-row gap-4">
           <Link href="https://github.com/anasfarock">
-            <Image src={GithubIcon} alt="Github Icon" />
+            <Image src={GithubIcon} alt="Github Icon" className="h-6 w-6" />
           </Link>
           <Link href="https://linkedin.com/in/anasfarock">
-            <Image src={LinkedinIcon} alt="LinkedIn Icon" />
+            <Image src={LinkedinIcon} alt="LinkedIn Icon" className="h-6 w-6" />
           </Link>
         </div>
       </div>
 
+      {/* Contact Details Section */}
       <div className="z-10">
         <h5 className="text-xl font-bold text-white my-2">Contact Details</h5>
         <div className="text-[#ADB7BE] mb-4">
@@ -52,11 +54,21 @@ const EmailSection = () => {
           </p>
         </div>
       </div>
+
+      {/* Space for Mobile */}
+      <style jsx>{`
+        @media (max-width: 768px) {
+          section#contact {
+            margin-bottom: 48px;
+          }
+        }
+      `}</style>
     </section>
   );
 };
 
 export default EmailSection;
+
 
 // Code in case of future development and Mailing Feature in the Website
 
