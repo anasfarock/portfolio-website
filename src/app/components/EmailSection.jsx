@@ -36,19 +36,19 @@ const EmailSection = () => {
         <div className="text-[#ADB7BE] mb-4">
           <p className="flex items-center gap-2">
             <span className="font-medium text-white">Email:</span>
-            <a href="mailto:yourname@example.com" className="hover:text-primary-500">
-              yourname@example.com
+            <a href="mailto:m.anas.farooq@outlook.com" className="hover:text-primary-500">
+              m.anas.farooq@outlook.com
             </a>
           </p>
           <p className="flex items-center gap-2 mt-2">
             <span className="font-medium text-white">Phone:</span>
-            <a href="tel:+1234567890" className="hover:text-primary-500">
-              +1 (234) 567-890
+            <a href="tel:+923468653531" className="hover:text-primary-500">
+              +92 346 8653531
             </a>
           </p>
           <p className="flex items-center gap-2 mt-2">
             <span className="font-medium text-white">Address:</span>
-            <span>123 Main St, City, State, ZIP</span>
+            <span>Islamabad Capital Territory, Pakistan, 44000</span>
           </p>
         </div>
       </div>
@@ -58,6 +58,7 @@ const EmailSection = () => {
 
 export default EmailSection;
 
+// Code in case of future development and Mailing Feature in the Website
 
 // const EmailSection = () => {
 // 	const [emailSubmitted, setEmailSubmitted] = useState(false);
