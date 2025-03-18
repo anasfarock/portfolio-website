@@ -10,43 +10,45 @@ const EmailSection = () => {
   return (
     <section
       id="contact"
-      className="grid md:grid-cols-2 gap-8 py-16 relative bg-[#121212]"
+      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
     >
-      <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#355E0D]/20 to-[#A68A64]/10 rounded-full h-64 w-64 blur-lg absolute top-1/2 -left-16 -translate-y-1/2 z-0"></div>
+      <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#A68A64] to- rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-y-1/2"></div>
 
       <div className="z-10">
-        <h5 className="text-xl font-bold text-white mb-4">Let's Connect</h5>
-        <p className="text-[#ADB7BE] mb-6 max-w-md">
-          I'm open to new opportunities. Whether you have a question or just want to say hi, I'll do my best to get back to you!
+        <h5 className="text-xl font-bold text-white my-2">Let&apos;s Connect</h5>
+        <p className="text-[#ADB7BE] mb-4 max-w-md">
+          I&apos;m currently looking for new opportunities, my inbox is always open. 
+          Whether you have a question or just want to say hi, I&apos;ll try my best to get 
+          back to you!
         </p>
-        <div className="flex gap-4">
-          <Link href="https://github.com/anasfarock" aria-label="GitHub">
-            <Image src={GithubIcon} alt="GitHub Icon" width={24} height={24} />
+        <div className="socials flex flex-row gap-2">
+          <Link href="https://github.com/anasfarock">
+            <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="https://linkedin.com/in/anasfarock" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-            <Image src={LinkedinIcon} alt="LinkedIn Icon" width={24} height={24} />
+          <Link href="https://linkedin.com/in/anasfarock">
+            <Image src={LinkedinIcon} alt="LinkedIn Icon" />
           </Link>
         </div>
       </div>
 
       <div className="z-10">
-        <h5 className="text-xl font-bold text-white mb-4">Contact Details</h5>
-        <div className="text-[#ADB7BE]">
-          <p className="flex items-center gap-2 mb-2">
+        <h5 className="text-xl font-bold text-white my-2">Contact Details</h5>
+        <div className="text-[#ADB7BE] mb-4">
+          <p className="flex items-center gap-2">
             <span className="font-medium text-white">Email:</span>
-            <a href="mailto:m.anas.farooq@outlook.com" className="hover:text-[#A68A64]">
+            <a href="mailto:m.anas.farooq@outlook.com" className="hover:text-primary-500">
               m.anas.farooq@outlook.com
             </a>
           </p>
-          <p className="flex items-center gap-2 mb-2">
+          <p className="flex items-center gap-2 mt-2">
             <span className="font-medium text-white">Phone:</span>
-            <a href="tel:+923468653531" className="hover:text-[#A68A64]">
+            <a href="tel:+923468653531" className="hover:text-primary-500">
               +92 346 8653531
             </a>
           </p>
-          <p className="flex items-center gap-2">
+          <p className="flex items-center gap-2 mt-2">
             <span className="font-medium text-white">Address:</span>
-            Islamabad Capital Territory, Pakistan, 44000
+            <span>Islamabad Capital Territory, Pakistan, 44000</span>
           </p>
         </div>
       </div>
