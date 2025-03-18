@@ -57,11 +57,7 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-          Hi, I’m Anas Farooq, a Computer Science student currently pursuing my degree at SZABIST with a strong interest in technology, finance, and innovation. My journey in the tech world has been shaped by hands-on experiences through internships, including my roles as a Technical Intern at Techaccess Pakistan and Zayup Communication. These opportunities have allowed me to enhance my skills in IT infrastructure, system troubleshooting, and customer service, while also fueling my passion for solving complex problems.
-
-          In addition to my technical background, I have a keen interest in finance, which I explored through the JPMorgan Chase Investment Banking job simulation. This experience provided me with a deep understanding of financial analysis, market research, and investment strategies.
-
-          With a strong foundation in programming, data structures, and system administration, I am constantly seeking to grow and contribute to projects that merge my love for technology and finance. I’m always open to collaborating on exciting projects and exploring new opportunities to further my skills.
+          Hi, I’m Anas Farooq, a Computer Science student currently pursuing my degree at SZABIST with a strong interest in technology, data science, and innovation. My journey in the tech world has been shaped by hands-on experiences through internships, including my roles as a Technical Intern at Techaccess Pakistan and Zayup Communication. These opportunities have allowed me to enhance my skills in IT infrastructure, system troubleshooting, and customer service, while also fueling my passion for solving complex problems. In addition to my technical background, I have a keen interest in data science, which I’ve explored through my proficiency in Python and its applications in analyzing and interpreting data. With a strong foundation in programming, data structures, system administration, and now Python and data science, I am constantly seeking to grow and contribute to projects that blend my love for technology and data-driven solutions. I’m always open to collaborating on exciting projects and exploring new opportunities to further my skills.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
