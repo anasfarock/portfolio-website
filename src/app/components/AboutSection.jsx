@@ -23,6 +23,8 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>SZABIST, Islamabad</li>
         <li>Punjab Group of Colleges</li>
+        <li>  </li>
+        <li>  </li>
       </ul>
     ),
   },
