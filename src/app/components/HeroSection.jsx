@@ -33,7 +33,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-          A Computer Science student at SZABIST with experience in IT support and system troubleshooting through internships at Techaccess Pakistan and Zayup Communication. I also have a strong interest in finance, having completed the JPMorgan Chase Investment Banking simulation.
+          A Computer Science student at SZABIST with experience in IT support and system troubleshooting through internships at Techaccess Pakistan and Zayup Communication. I also have a strong interest in finance and have developed skills through coursework and self-directed projects.
           </p>
           <div>
             <Link
