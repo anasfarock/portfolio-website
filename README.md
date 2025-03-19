@@ -4,7 +4,7 @@ This is a portfolio website built with Next.js and Tailwind CSS. It showcases yo
 
 ## Installation
 
-1. Clone the repository: `https://github.com/anasfarock/nextjs-protfolio.git`
+1. Clone the repository: `https://github.com/anasfarock/nextjs-portfolio.git`
 2. Navigate to the project directory: `cd portfolio-website`
 3. Install the dependencies: `npm install`
 
