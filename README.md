@@ -22,4 +22,3 @@ The following dependencies are required for this project:
 - React: A JavaScript library for building user interfaces.
 - React Icons: A collection of popular icons for React projects.
 - TypeScript: A typed superset of JavaScript that compiles to plain JavaScript.
-- Resend: Resend is the email API for developers.
