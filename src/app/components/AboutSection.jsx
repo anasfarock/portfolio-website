@@ -15,7 +15,7 @@ const AboutSection = () => {
           </h2>
         </div>
         <p className="text-base lg:text-lg text-white">
-          Hi, I’m Anas Farooq, a Computer Science student currently pursuing my
+          Hi, I&apos;m Anas Farooq, a Computer Science student currently pursuing my
           degree at SZABIST with a strong interest in technology, data science,
           and innovation. My journey in the tech world has been shaped by
           hands-on experiences through internships, including my roles as a
@@ -47,7 +47,7 @@ const AboutSection = () => {
                     showFullEducation ? "" : "line-clamp-5 sm:line-clamp-none"
                   }`}
                 >
-                  I am currently pursuing a Bachelor's degree in Computer
+                  I am currently pursuing a Bachelor&apos;s degree in Computer
                   Science at SZABIST, where I am dedicated to developing a
                   strong and comprehensive foundation in key areas such as
                   software development, data structures, algorithms, and systems
