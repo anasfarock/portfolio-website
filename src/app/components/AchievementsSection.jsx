@@ -23,10 +23,12 @@ const achievementsList = [
   {
     metric: "Certifications",
     value: "5",
+    postfix: "+",
   },
   {
     metric: "Years",
     value: "3",
+    postfix: "+",
   },
 ];
 
