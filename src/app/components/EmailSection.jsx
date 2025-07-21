@@ -38,14 +38,14 @@ const EmailSection = () => {
         <div className="text-[#ADB7BE] mb-4">
           <p className="flex items-center gap-2">
             <span className="font-medium text-white">Email:</span>
-            <a href="mailto:m.anas.farooq@outlook.com" className="hover:text-primary-500">
-              m.anas.farooq@outlook.com
+            <a href="mailto:contact@anasfarooq.com" className="hover:text-primary-500">
+              contact@anasfarooq.com
             </a>
           </p>
           <p className="flex items-center gap-2 mt-2">
             <span className="font-medium text-white">Phone:</span>
             <a href="tel:+923468653531" className="hover:text-primary-500">
-              +92 346 8653531
+              +92-346-8653531
             </a>
           </p>
           <p className="flex items-center gap-2 mt-2">

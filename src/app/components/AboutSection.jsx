@@ -10,9 +10,14 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>C++</li>
-        <li>Python</li>
-        <li>JavaScript</li>
         <li>React.js</li>
+        <li>React Native</li>
+        <li>Tailwind CSS</li>
+        <li>Python</li>
+        <li>Node.js</li>
+        <li>Express.js</li>
+        <li>MySQL</li>
+        <li>Git/Github</li>
       </ul>
     ),
   },
