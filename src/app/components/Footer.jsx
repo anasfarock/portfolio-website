@@ -12,7 +12,7 @@ const Footer = () => {
           height={50}
           className="w-[120px] sm:w-[150px] md:w-[200px] h-auto mb-2 sm:mb-0"
         />
-        <p className="text-slate-400 text-center sm:text-left">All rights reserved.</p>
+        <p className="text-slate-400 text-center sm:text-left">© 2025 Anas Farooq. All rights reserved.</p>
       </div>
     </footer>
   );
