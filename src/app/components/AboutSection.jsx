@@ -33,9 +33,9 @@ const AboutSection = () => {
           new opportunities to further my skills.
         </p>
 
-        <div className="grid gap-6 w-full mt-12 grid-cols-1 lg:grid-cols-3 lg:grid-rows-2">
+        <div className="grid gap-4 sm:gap-6 w-full mt-8 sm:mt-12 grid-cols-1 lg:grid-cols-3 lg:grid-rows-2">
           {/* Education Box - Left Column, Full Height */}
-          <div className="row-span-2 sm:border-[#33353F] sm:border rounded-md py-8 px-6 px-4 md:px-8 lg:px-12">
+          <div className="row-span-2 sm:border-[#33353F] sm:border rounded-md py-4 sm:py-8 px-4 sm:px-6 md:px-8 lg:px-12">
             <h3 className="text-2xl font-semibold mb-4 text-white">
               Education
             </h3>
@@ -75,7 +75,7 @@ const AboutSection = () => {
           </div>
 
           {/* Certifications Box - Top Middle */}
-          <div className="sm:border-[#33353F] sm:border rounded-md py-8 px-6 px-4 md:px-8 lg:px-12">
+          <div className="row-span-2 sm:border-[#33353F] sm:border rounded-md py-4 sm:py-8 px-4 sm:px-6 md:px-8 lg:px-12">
             <h3 className="text-2xl font-semibold mb-4 text-white">
               Certifications
             </h3>
@@ -90,7 +90,7 @@ const AboutSection = () => {
           </div>
 
           {/* Experience Box - Right Column, Full Height */}
-          <div className="row-span-2 sm:border-[#33353F] sm:border rounded-md py-8 px-6 px-4 md:px-8 lg:px-12">
+          <div className="row-span-2 sm:border-[#33353F] sm:border rounded-md py-4 sm:py-8 px-4 sm:px-6 md:px-8 lg:px-12">
             <h3 className="text-2xl font-semibold mb-4 text-white">
               Experience
             </h3>
@@ -148,12 +148,12 @@ const AboutSection = () => {
           </div>
 
           {/* Skills Box - Bottom Middle */}
-          <div className="sm:border-[#33353F] sm:border rounded-md py-8 px-6 px-4 md:px-8 lg:px-12">
+          <div className="row-span-2 sm:border-[#33353F] sm:border rounded-md py-4 sm:py-8 px-4 sm:px-6 md:px-8 lg:px-12">
             <h3 className="text-2xl font-semibold mb-4 text-white">Skills</h3>
             <ul className="grid grid-cols-2 list-disc pl-5 text-[#ADB7BE] gap-y-2">
               <li>C++</li>
-              <li>React.js</li>
               <li>React Native</li>
+              <li>React.js</li>
               <li>Tailwind CSS</li>
               <li>Python</li>
               <li>Node.js</li>
