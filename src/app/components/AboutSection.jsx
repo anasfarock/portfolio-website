@@ -10,11 +10,11 @@ const AboutSection = () => {
     <section className="text-white py-6" id="about">
       <div className="flex flex-col items-start text-left mt-12 px-0 sm:px-0 md:px-0 py-4 max-w-full mx-auto">
         <div className="w-full text-center">
-          <h2 className="text-4xl font-bold text-white mb-4 inline-block">
+          <h2 className="text-center text-4xl font-bold text-white mt-12 mb-6 md:mb-8">
             About Me
           </h2>
         </div>
-        <p className="text-base lg:text-lg text-white">
+        <p className="text-base lg:text-lg text-[#ADB7BE]">
           Hi, I&apos;m Anas Farooq, a Computer Science student currently pursuing my
           degree at SZABIST with a strong interest in technology, data science,
           and innovation. My journey in the tech world has been shaped by
