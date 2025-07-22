@@ -101,14 +101,14 @@ const EmailSection = () => {
           >
             <input
               type="text"
-              name="user_name"
+              name="name"
               placeholder="Your Name"
               required
               className="bg-[#18191E] p-3 rounded text-white border border-[#33353F] focus:outline-none focus:border-primary-500"
             />
             <input
               type="email"
-              name="user_email"
+              name="email"
               placeholder="Your Email"
               required
               className="bg-[#18191E] p-3 rounded text-white border border-[#33353F] focus:outline-none focus:border-primary-500"
