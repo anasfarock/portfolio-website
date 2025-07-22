@@ -8,7 +8,7 @@ const AboutSection = () => {
 
   return (
     <section className="text-white py-6" id="about">
-      <div className="flex flex-col items-start text-left mt-24 px-0 sm:px-0 md:px-0 py-4 max-w-full mx-auto">
+      <div className="flex flex-col items-start text-left mt-12 px-0 sm:px-0 md:px-0 py-4 max-w-full mx-auto">
         <div className="w-full text-center">
           <h2 className="text-4xl font-bold text-white mb-4 inline-block">
             About Me
