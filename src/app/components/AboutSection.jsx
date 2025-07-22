@@ -24,12 +24,12 @@ const AboutSection = () => {
           infrastructure, system troubleshooting, and customer service, while
           also fueling my passion for solving complex problems. In addition to
           my technical background, I have a keen interest in data science, which
-          I've explored through my proficiency in Python and its applications in
+          I&apos;ve explored through my proficiency in Python and its applications in
           analyzing and interpreting data. With a strong foundation in
           programming, data structures, system administration, and now Python
           and data science, I am constantly seeking to grow and contribute to
           projects that blend my love for technology and data-driven solutions.
-          I'm always open to collaborating on exciting projects and exploring
+          I&apos;m always open to collaborating on exciting projects and exploring
           new opportunities to further my skills.
         </p>
 
