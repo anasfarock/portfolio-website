@@ -13,7 +13,7 @@ const navLinks = [
   },
   {
     title: "Blog",
-    path: "Blog",
+    path: "https://blog.anasfarooq.com",
   },
   {
     title: "Projects",
