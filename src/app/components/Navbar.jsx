@@ -9,7 +9,7 @@ import MenuOverlay from "./MenuOverlay";
 const navLinks = [
   {
     title: "About",
-    path: "About",
+    path: "#about",
   },
   {
     title: "Blog",
@@ -17,11 +17,11 @@ const navLinks = [
   },
   {
     title: "Projects",
-    path: "Projects",
+    path: "#projects",
   },
   {
     title: "Contact",
-    path: "Contact",
+    path: "#contact",
   },
 ];
 
