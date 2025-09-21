@@ -37,7 +37,7 @@ const AboutSection = () => {
           {/* Education Box - Left Column, Full Height */}
           <div className="relative row-span-2 border border-[#33353F] rounded-md overflow-hidden">
             <div className="relative bg-[#121212] rounded-md py-4 sm:py-8 px-4 md:px-8 lg:px-12">
-              <h3 className="text-2xl font-semibold mb-4 text-white">
+              <h3 className="text-2xl font-semibold mb-4 text-white text-center">
                 Education
               </h3>
               <ul className="list-disc pl-5 text-[#ADB7BE] space-y-2">
@@ -80,7 +80,7 @@ const AboutSection = () => {
           {/* Certifications Box - Top Middle */}
           <div className="relative border border-[#33353F] rounded-md overflow-hidden">
             <div className="relative bg-[#121212] rounded-md py-4 sm:py-8 px-4 md:px-8 lg:px-12">
-              <h3 className="text-2xl font-semibold mb-4 text-white">
+              <h3 className="text-2xl font-semibold mb-4 text-white text-center">
                 Certifications
               </h3>
               <ul className="list-disc pl-5 text-[#ADB7BE]">
@@ -97,7 +97,7 @@ const AboutSection = () => {
           {/* Experience Box - Right Column, Full Height */}
           <div className="relative row-span-2 border border-[#33353F] rounded-md overflow-hidden">
             <div className="relative bg-[#121212] rounded-md py-4 sm:py-8 px-4 md:px-8 lg:px-12">
-              <h3 className="text-2xl font-semibold mb-4 text-white">
+              <h3 className="text-2xl font-semibold mb-4 text-white text-center">
                 Experience
               </h3>
               <ul className="list-disc pl-5 text-[#ADB7BE] space-y-4">
@@ -159,7 +159,7 @@ const AboutSection = () => {
           {/* Skills Box - Bottom Middle */}
           <div className="relative border border-[#33353F] rounded-md overflow-hidden">
             <div className="relative bg-[#121212] rounded-md py-4 sm:py-8 px-4 md:px-8 lg:px-12">
-              <h3 className="text-2xl font-semibold mb-4 text-white">Skills</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-white text-center">Skills</h3>
               <ul className="grid grid-cols-2 list-disc pl-5 text-[#ADB7BE] gap-y-2">
                 <li>C++</li>
                 <li>React Native</li><li>React.js</li>

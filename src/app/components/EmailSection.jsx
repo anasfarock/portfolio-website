@@ -10,7 +10,7 @@ import emailjs from "@emailjs/browser";
 const EmailSection = () => {
   const form = useRef();
 
-  
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -104,27 +104,28 @@ const EmailSection = () => {
               name="name"
               placeholder="Your Name"
               required
-              className="bg-[#18191E] p-3 rounded text-white border border-[#33353F] focus:outline-none focus:border-primary-500"
+              className="w-full px-5 py-3 bg-[#18191E] text-white rounded-lg border-2 border-[#33353F] focus:outline-none focus:border-[#6B8E23] transition-colors placeholder:text-[#ADB7BE]"
             />
             <input
               type="email"
               name="email"
               placeholder="Your Email"
               required
-              className="bg-[#18191E] p-3 rounded text-white border border-[#33353F] focus:outline-none focus:border-primary-500"
+              className="w-full px-5 py-3 bg-[#18191E] text-white rounded-lg border-2 border-[#33353F] focus:outline-none focus:border-[#6B8E23] transition-colors placeholder:text-[#ADB7BE]"
             />
             <textarea
               name="message"
               placeholder="Your Message"
               rows="5"
               required
-              className="bg-[#18191E] p-3 rounded text-white border border-[#33353F] focus:outline-none focus:border-primary-500"
+              className="w-full px-5 py-3 bg-[#18191E] text-white rounded-lg border-2 border-[#33353F] focus:outline-none focus:border-[#6B8E23] transition-colors placeholder:text-[#ADB7BE] resize-none"
             />
             <button
               type="submit"
-              className="bg-[#A68A64] text-white px-6 py-2 rounded hover:bg-opacity-90 transition"
+              className="w-full relative overflow-hidden group text-white px-6 py-3 rounded-lg"
             >
-              Send Message
+              <span className="absolute inset-0 bg-[linear-gradient(90deg,#4A6118_0%,#5A7D2A_20%,#6B8E23_35%,#88A454_50%,#6B8E23_65%,#5A7D2A_80%,#4A6118_100%)] bg-[length:200%_100%] animate-gradient-slide"></span>
+              <span className="relative text-white font-medium">Send Message</span>
             </button>
           </form>
         </div>
