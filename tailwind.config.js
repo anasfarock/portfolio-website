@@ -213,10 +213,15 @@ module.exports = {
       },
     },
     colors: {
-      ...colors,
       primary: colors.purple,
       secondary: colors.pink,
+      // Using new color names
+      slate: colors.slate,    // renamed from blueGray
+      gray: colors.gray,      // renamed from coolGray
+      neutral: colors.neutral, // renamed from trueGray
+      stone: colors.stone,    // renamed from warmGray
+      sky: colors.sky,        // renamed from lightBlue
     },
   },
-  plugins: [require("@tailwindcss/line-clamp")],
+  plugins: [],
 };
