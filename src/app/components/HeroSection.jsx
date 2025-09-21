@@ -34,10 +34,12 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl relative">
-            <span className="relative z-10">A Computer Science student at SZABIST with experience in IT support and system troubleshooting through internships at Techaccess Pakistan and Zayup Communication. I also have a strong interest in finance and have developed skills through coursework and self-directed projects.</span>
+          <div className="relative mb-6">
+            <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl relative z-10">
+              A Computer Science student at SZABIST with experience in IT support and system troubleshooting through internships at Techaccess Pakistan and Zayup Communication. I also have a strong interest in finance and have developed skills through coursework and self-directed projects.
+            </p>
             <div className="absolute inset-0 bg-gradient-to-r from-[#6B8E23]/10 to-transparent blur-lg -z-10"></div>
-          </p>
+          </div>
           <div className="relative z-10">
             <Link
               href="https://www.linkedin.com/in/anasfarock/"
