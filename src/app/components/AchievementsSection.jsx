@@ -18,7 +18,7 @@ const achievementsList = [
   {
     prefix: "~",
     metric: "Users",
-    value: "100,000",
+    value: "100",
   },
   {
     metric: "Certifications",
@@ -76,13 +76,13 @@ const AchievementsSection = () => {
           return (
             <div
               key={index}
-              className="flex flex-col items-center justify-center mx-4 my-4 sm:my-0"
+              className="flex flex-col items-center justify-center mx-4 my-4 sm:my-0 relative z-10"
             >
               <h2 className="text-white text-4xl font-bold flex flex-row">
-                {achievement.prefix}
+                {achievement.prefix && achievement.prefix}
                 <AnimatedNumbers
                   includeComma
-                  animateToNumber={parseInt(achievement.value)}
+                  animateToNumber={parseInt(achievement.value.replace(/,/g, ''))}
                   locale="en-US"
                   className="text-white text-4xl font-bold"
                   configs={(_, index) => {
@@ -93,9 +93,9 @@ const AchievementsSection = () => {
                     };
                   }}
                 />
-                {achievement.postfix}
+                {achievement.postfix && achievement.postfix}
               </h2>
-              <p className="text-[#ADB7BE] text-base">{achievement.metric}</p>
+              <p className="text-gray-300 text-base font-medium mt-2">{achievement.metric}</p>
             </div>
           );
         })}
