@@ -16,7 +16,7 @@ const HeroSection = () => {
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#6B8E23] to-[#E8D8B5]">
+            <span className="text-transparent bg-clip-text bg-[linear-gradient(90deg,#4A6118_0%,#5A7D2A_20%,#6B8E23_35%,#88A454_50%,#6B8E23_65%,#5A7D2A_80%,#4A6118_100%)] bg-[length:200%_100%] animate-gradient-slide">
               Hello, I&apos;m{" "}
             </span>
             <br></br>
@@ -34,21 +34,24 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            A Computer Science student at SZABIST with experience in IT support and system troubleshooting through internships at Techaccess Pakistan and Zayup Communication. I also have a strong interest in finance and have developed skills through coursework and self-directed projects.
+          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl relative">
+            <span className="relative z-10">A Computer Science student at SZABIST with experience in IT support and system troubleshooting through internships at Techaccess Pakistan and Zayup Communication. I also have a strong interest in finance and have developed skills through coursework and self-directed projects.</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-[#6B8E23]/10 to-transparent blur-lg -z-10"></div>
           </p>
-          <div>
+          <div className="relative z-10">
             <Link
               href="https://www.linkedin.com/in/anasfarock/"
-              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#5A7D2A] to-[#b19a7e] hover:bg-slate-200 text-white"
+              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 relative overflow-hidden group"
             >
-              Hire Me
+              <span className="absolute inset-0 bg-[linear-gradient(90deg,#4A6118_0%,#5A7D2A_20%,#6B8E23_35%,#88A454_50%,#6B8E23_65%,#5A7D2A_80%,#4A6118_100%)] bg-[length:200%_100%] animate-gradient-slide"></span>
+              <span className="relative text-white font-medium">Hire Me</span>
             </Link>
             <Link
               href="/AnasFarooq_Resume.pdf"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#5A7D2A] to-[#b19a7e] hover:bg-slate-800 text-white mt-3"
+              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full relative overflow-hidden group mt-3"
             >
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+              <span className="absolute inset-0 bg-[linear-gradient(90deg,#4A6118_0%,#5A7D2A_20%,#6B8E23_35%,#88A454_50%,#6B8E23_65%,#5A7D2A_80%,#4A6118_100%)] bg-[length:200%_100%] animate-gradient-slide"></span>
+              <span className="block bg-[#121212] rounded-full px-5 py-2 relative text-white group-hover:bg-slate-800 transition-colors">
                 Download CV
               </span>
             </Link>
