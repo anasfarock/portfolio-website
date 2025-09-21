@@ -42,34 +42,35 @@ const AboutSection = () => {
             <ul className="list-disc pl-5 text-[#ADB7BE] space-y-2">
               <li>
                 <strong>BS in Computer Science - SZABIST, Islamabad</strong>
-                <p
-                  className={`text-sm text-[#ADB7BE] mt-1 ${
-                    showFullEducation ? "" : "line-clamp-5 sm:line-clamp-none"
-                  }`}
-                >
-                  I am currently pursuing a Bachelor&apos;s degree in Computer
-                  Science at SZABIST, where I am dedicated to developing a
-                  strong and comprehensive foundation in key areas such as
-                  software development, data structures, algorithms, and systems
-                  design. My academic journey so far has been enriched with a
-                  combination of theoretical learning and practical, hands-on
-                  projects that have significantly sharpened my analytical
-                  thinking, and problem-solving abilities. Through coursework
-                  and team-based assignments, I have gained experience in
-                  designing and implementing scalable software solutions, and
-                  understanding how modern computing infrastructures work under
-                  the hood. These experiences have not only enhanced my
-                  technical skills but also helped me build soft skills like
-                  teamwork, time management, and effective
-                  communication—essential traits for tech industry.
-                </p>
-                {/* Toggle Button (mobile only) */}
-                <button
-                  className="text-blue-400 text-sm mt-2 sm:hidden"
-                  onClick={() => setShowFullEducation((prev) => !prev)}
-                >
-                  {showFullEducation ? "See Less" : "See More"}
-                </button>
+                <div>
+                  <p
+                    className={`text-sm text-[#ADB7BE] mt-1 ${showFullEducation ? "" : "line-clamp-5 sm:line-clamp-none"
+                      }`}
+                  >
+                    I am currently pursuing a Bachelor&apos;s degree in Computer
+                    Science at SZABIST, where I am dedicated to developing a
+                    strong and comprehensive foundation in key areas such as
+                    software development, data structures, algorithms, and systems
+                    design. My academic journey so far has been enriched with a
+                    combination of theoretical learning and practical, hands-on
+                    projects that have significantly sharpened my analytical
+                    thinking, and problem-solving abilities. Through coursework
+                    and team-based assignments, I have gained experience in
+                    designing and implementing scalable software solutions, and
+                    understanding how modern computing infrastructures work under
+                    the hood. These experiences have not only enhanced my
+                    technical skills but also helped me build soft skills like
+                    teamwork, time management, and effective
+                    communication—essential traits for tech industry.
+                  </p>
+                  {/* Toggle Button (mobile only) */}
+                  <button
+                    className="text-blue-400 text-sm mt-2 sm:hidden"
+                    onClick={() => setShowFullEducation((prev) => !prev)}
+                  >
+                    {showFullEducation ? "See Less" : "See More"}
+                  </button>
+                </div>
               </li>
             </ul>
           </div>
@@ -97,52 +98,54 @@ const AboutSection = () => {
             <ul className="list-disc pl-5 text-[#ADB7BE] space-y-4">
               <li>
                 <strong>Technical Intern - Techaccess Pakistan</strong>
-                <p
-                  className={`text-sm text-[#ADB7BE] mt-1 ${
-                    showFullExperience ? "" : "line-clamp-5 sm:line-clamp-none"
-                  }`}
-                >
-                  During my internship at Techaccess Pakistan, I worked closely
-                  with technical teams to support IT infrastructure,
-                  troubleshoot system issues, and contribute to various
-                  projects. I gained practical experience in managing systems,
-                  understanding configurations, and improving overall system
-                  performance. This role provided me with hands-on exposure to
-                  industry-standard tools and practices in IT services.
-                </p>
-                {/* Button to expand */}
-                {/** Place this button only once after all paragraphs if you want 1 toggle for all */}
-                <button
-                  className="text-blue-400 text-sm mt-2 sm:hidden"
-                  onClick={() => setShowFullExperience((prev) => !prev)}
-                >
-                  {showFullExperience ? "See Less" : "See More"}
-                </button>
+                <div>
+                  <p
+                    className={`text-sm text-[#ADB7BE] mt-1 ${showFullExperience ? "" : "line-clamp-5 sm:line-clamp-none"
+                      }`}
+                  >
+                    During my internship at Techaccess Pakistan, I worked closely
+                    with technical teams to support IT infrastructure,
+                    troubleshoot system issues, and contribute to various
+                    projects. I gained practical experience in managing systems,
+                    understanding configurations, and improving overall system
+                    performance. This role provided me with hands-on exposure to
+                    industry-standard tools and practices in IT services.
+                  </p>
+                  {/* Button to expand */}
+                  {/** Place this button only once after all paragraphs if you want 1 toggle for all */}
+                  <button
+                    className="text-blue-400 text-sm mt-2 sm:hidden"
+                    onClick={() => setShowFullExperience((prev) => !prev)}
+                  >
+                    {showFullExperience ? "See Less" : "See More"}
+                  </button>
+                </div>
               </li>
               <li>
                 <strong>
                   Customer Support Executive - Zayup Communication
                 </strong>
-                <p
-                  className={`text-sm text-[#ADB7BE] mt-1 ${
-                    showFullExperience ? "" : "line-clamp-5 sm:line-clamp-none"
-                  }`}
-                >
-                  In my role as a Customer Support Executive at Zayup
-                  Communication, I was responsible for handling customer
-                  queries, providing real-time technical support, and resolving
-                  issues related to communication services. I developed strong
-                  communication and problem-solving skills while ensuring a high
-                  level of customer satisfaction.
-                </p>
-                {/* Button to expand */}
-                {/** Place this button only once after all paragraphs if you want 1 toggle for all */}
-                <button
-                  className="text-blue-400 text-sm mt-2 sm:hidden"
-                  onClick={() => setShowFullExperience((prev) => !prev)}
-                >
-                  {showFullExperience ? "See Less" : "See More"}
-                </button>
+                <div>
+                  <p
+                    className={`text-sm text-[#ADB7BE] mt-1 ${showFullExperience ? "" : "line-clamp-5 sm:line-clamp-none"
+                      }`}
+                  >
+                    In my role as a Customer Support Executive at Zayup
+                    Communication, I was responsible for handling customer
+                    queries, providing real-time technical support, and resolving
+                    issues related to communication services. I developed strong
+                    communication and problem-solving skills while ensuring a high
+                    level of customer satisfaction.
+                  </p>
+                  {/* Button to expand */}
+                  {/** Place this button only once after all paragraphs if you want 1 toggle for all */}
+                  <button
+                    className="text-blue-400 text-sm mt-2 sm:hidden"
+                    onClick={() => setShowFullExperience((prev) => !prev)}
+                  >
+                    {showFullExperience ? "See Less" : "See More"}
+                  </button>
+                </div>
               </li>
             </ul>
           </div>
@@ -153,7 +156,7 @@ const AboutSection = () => {
             <ul className="grid grid-cols-2 list-disc pl-5 text-[#ADB7BE] gap-y-2">
               <li>C++</li>
               <li>React Native</li><li>React.js</li>
-              
+
               <li>Tailwind CSS</li>
               <li>Python</li>
               <li>Node.js</li>
