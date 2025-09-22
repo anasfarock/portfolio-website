@@ -35,8 +35,8 @@ const AboutSection = () => {
 
         <div className="grid gap-3 sm:gap-6 w-full mt-12 grid-cols-1 lg:grid-cols-3 lg:grid-rows-2">
           {/* Education Box - Left Column, Full Height */}
-          <div className="relative row-span-2 border border-[#33353F] rounded-md overflow-hidden">
-            <div className="relative bg-[#121212] rounded-md py-4 sm:py-8 px-4 md:px-8 lg:px-12">
+          <div className="relative row-span-2 border border-[4px] border-[#33353F] rounded-[25px] overflow-hidden">
+            <div className="relative bg-[#121212] rounded-[25px] py-4 sm:py-8 px-4 md:px-8 lg:px-12">
               <h3 className="text-2xl font-semibold mb-4 text-white text-center">
                 Education
               </h3>
@@ -78,8 +78,8 @@ const AboutSection = () => {
           </div>
 
           {/* Certifications Box - Top Middle */}
-          <div className="relative border border-[#33353F] rounded-md overflow-hidden">
-            <div className="relative bg-[#121212] rounded-md py-4 sm:py-8 px-4 md:px-8 lg:px-12">
+          <div className="relative border border-[4px] border-[#33353F] rounded-[25px] overflow-hidden">
+            <div className="relative bg-[#121212] rounded-[25px] py-4 sm:py-8 px-4 md:px-8 lg:px-12">
               <h3 className="text-2xl font-semibold mb-4 text-white text-center">
                 Certifications
               </h3>
@@ -95,8 +95,8 @@ const AboutSection = () => {
           </div>
 
           {/* Experience Box - Right Column, Full Height */}
-          <div className="relative row-span-2 border border-[#33353F] rounded-md overflow-hidden">
-            <div className="relative bg-[#121212] rounded-md py-4 sm:py-8 px-4 md:px-8 lg:px-12">
+          <div className="relative row-span-2 border border-[4px] border-[#33353F] rounded-[25px] overflow-hidden">
+            <div className="relative bg-[#121212] rounded-[25px] py-4 sm:py-8 px-4 md:px-8 lg:px-12">
               <h3 className="text-2xl font-semibold mb-4 text-white text-center">
                 Experience
               </h3>
@@ -157,8 +157,8 @@ const AboutSection = () => {
           </div>
 
           {/* Skills Box - Bottom Middle */}
-          <div className="relative border border-[#33353F] rounded-md overflow-hidden">
-            <div className="relative bg-[#121212] rounded-md py-4 sm:py-8 px-4 md:px-8 lg:px-12">
+          <div className="relative border border-[4px] border-[#33353F] rounded-[25px] overflow-hidden">
+            <div className="relative bg-[#121212] rounded-[25px] py-4 sm:py-8 px-4 md:px-8 lg:px-12">
               <h3 className="text-2xl font-semibold mb-4 text-white text-center">Skills</h3>
               <ul className="grid grid-cols-2 list-disc pl-5 text-[#ADB7BE] gap-y-2">
                 <li>C++</li>
