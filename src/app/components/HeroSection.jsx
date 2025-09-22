@@ -16,7 +16,18 @@ const HeroSection = () => {
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
-            <span className="text-transparent bg-clip-text bg-[linear-gradient(90deg,#4A6118_0%,#5A7D2A_20%,#6B8E23_35%,#88A454_50%,#6B8E23_65%,#5A7D2A_80%,#4A6118_100%)] bg-[length:200%_100%] animate-gradient-slide">
+            {/* Using inline styles for the gradient */}
+            <span
+              className="animate-gradient-slide"
+              style={{
+                background: 'linear-gradient(90deg, #4A6118 0%, #5A7D2A 20%, #6B8E23 35%, #88A454 50%, #6B8E23 65%, #5A7D2A 80%, #4A6118 100%)',
+                backgroundSize: '200% 100%',
+                WebkitBackgroundClip: 'text',
+                backgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                color: 'transparent'
+              }}
+            >
               Hello, I&apos;m{" "}
             </span>
             <br></br>
@@ -76,7 +87,6 @@ const HeroSection = () => {
               />
             </div>
           </div>
-
         </motion.div>
       </div>
     </section>
