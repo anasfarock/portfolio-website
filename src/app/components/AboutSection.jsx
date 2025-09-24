@@ -7,10 +7,10 @@ const AboutSection = () => {
   const [showFullExperience, setShowFullExperience] = useState(false);
 
   return (
-    <section className="text-white py-6" id="about">
+    <section className="text-[#ffffff] py-6" id="about">
       <div className="flex flex-col items-start text-left mt-12 px-0 sm:px-0 md:px-0 py-4 max-w-full mx-auto">
         <div className="w-full text-center">
-          <h2 className="text-center text-4xl font-bold text-whites mb-6 md:mb-8">
+          <h2 className="text-center text-4xl font-bold text-[#ffffff] mb-6 md:mb-8">
             About Me
           </h2>
         </div>
@@ -37,7 +37,7 @@ const AboutSection = () => {
           {/* Education Box - Left Column, Full Height */}
           <div className="relative row-span-2 border border-[4px] border-[#33353F] rounded-[25px] overflow-hidden">
             <div className="relative bg-[#121212] rounded-[25px] py-4 sm:py-8 px-4 md:px-8 lg:px-12">
-              <h3 className="text-2xl font-semibold mb-4 text-white text-center">
+              <h3 className="text-2xl font-semibold mb-4 text-[#ffffff] text-center">
                 Education
               </h3>
               <ul className="list-disc pl-5 text-[#ADB7BE] space-y-2">
@@ -80,7 +80,7 @@ const AboutSection = () => {
           {/* Certifications Box - Top Middle */}
           <div className="relative border border-[4px] border-[#33353F] rounded-[25px] overflow-hidden">
             <div className="relative bg-[#121212] rounded-[25px] py-4 sm:py-8 px-4 md:px-8 lg:px-12">
-              <h3 className="text-2xl font-semibold mb-4 text-white text-center">
+              <h3 className="text-2xl font-semibold mb-4 text-[#ffffff] text-center">
                 Certifications
               </h3>
               <ul className="list-disc pl-5 text-[#ADB7BE]">
@@ -97,7 +97,7 @@ const AboutSection = () => {
           {/* Experience Box - Right Column, Full Height */}
           <div className="relative row-span-2 border border-[4px] border-[#33353F] rounded-[25px] overflow-hidden">
             <div className="relative bg-[#121212] rounded-[25px] py-4 sm:py-8 px-4 md:px-8 lg:px-12">
-              <h3 className="text-2xl font-semibold mb-4 text-white text-center">
+              <h3 className="text-2xl font-semibold mb-4 text-[#ffffff] text-center">
                 Experience
               </h3>
               <ul className="list-disc pl-5 text-[#ADB7BE] space-y-4">
@@ -143,7 +143,6 @@ const AboutSection = () => {
                       level of customer satisfaction.
                     </p>
                     {/* Button to expand */}
-                    {/** Place this button only once after all paragraphs if you want 1 toggle for all */}
                     <button
                       className="text-blue-400 text-sm mt-2 sm:hidden"
                       onClick={() => setShowFullExperience((prev) => !prev)}
@@ -159,7 +158,7 @@ const AboutSection = () => {
           {/* Skills Box - Bottom Middle */}
           <div className="relative border border-[4px] border-[#33353F] rounded-[25px] overflow-hidden">
             <div className="relative bg-[#121212] rounded-[25px] py-4 sm:py-8 px-4 md:px-8 lg:px-12">
-              <h3 className="text-2xl font-semibold mb-4 text-white text-center">Skills</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-[#ffffff] text-center">Skills</h3>
               <ul className="grid grid-cols-2 list-disc pl-5 text-[#ADB7BE] gap-y-2">
                 <li>C++</li>
                 <li>React Native</li><li>React.js</li>

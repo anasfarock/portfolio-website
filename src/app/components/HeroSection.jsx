@@ -15,7 +15,7 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
-          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
+          <h1 className="text-[#ffffff] mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
             {/* Using inline styles for the gradient */}
             <span
               className="animate-gradient-slide"
@@ -57,14 +57,14 @@ const HeroSection = () => {
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 relative overflow-hidden group"
             >
               <span className="absolute inset-0 bg-[linear-gradient(90deg,#4A6118_0%,#5A7D2A_20%,#6B8E23_35%,#88A454_50%,#6B8E23_65%,#5A7D2A_80%,#4A6118_100%)] bg-[length:200%_100%] animate-gradient-slide"></span>
-              <span className="relative text-white font-medium">Hire Me</span>
+              <span className="relative text-[#ffffff] font-medium">Hire Me</span>
             </Link>
             <Link
               href="/AnasFarooq_Resume.pdf"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full relative overflow-hidden group mt-3"
             >
               <span className="absolute inset-0 bg-[linear-gradient(90deg,#4A6118_0%,#5A7D2A_20%,#6B8E23_35%,#88A454_50%,#6B8E23_65%,#5A7D2A_80%,#4A6118_100%)] bg-[length:200%_100%] animate-gradient-slide"></span>
-              <span className="block bg-[#121212] rounded-full px-5 py-2 relative text-white group-hover:bg-slate-800 transition-colors">
+              <span className="block bg-[#121212] rounded-full px-5 py-2 relative text-[#ffffff] group-hover:bg-slate-800 transition-colors">
                 Download CV
               </span>
             </Link>

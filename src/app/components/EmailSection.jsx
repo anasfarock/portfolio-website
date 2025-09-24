@@ -36,7 +36,7 @@ const EmailSection = () => {
   return (
     <section id="contact" className="my-6 md:my-18 py-24 relative">
       {/* Centered Heading */}
-      <h2 className="text-4xl font-bold text-white mb-16 text-center">
+      <h2 className="text-4xl font-bold text-[#ffffff] mb-16 text-center">
         Contact Me
       </h2>
 
@@ -44,7 +44,7 @@ const EmailSection = () => {
       <div className="grid md:grid-cols-2 gap-8">
         {/* Left Side - Contact Info */}
         <div className="z-10">
-          <h5 className="text-xl font-bold text-white mb-3">
+          <h5 className="text-xl font-bold text-[#ffffff] mb-3">
             Let&apos;s Connect
           </h5>
           <p className="text-[#ADB7BE] mb-8 max-w-md">
@@ -53,10 +53,10 @@ const EmailSection = () => {
             as soon as possible!
           </p>
 
-          <h5 className="text-xl font-bold text-white mb-3">Contact Details</h5>
+          <h5 className="text-xl font-bold text-[#ffffff] mb-3">Contact Details</h5>
           <div className="text-[#ADB7BE] space-y-2">
             <p>
-              <span className="font-medium text-white">Email:</span>{" "}
+              <span className="font-medium text-[#ffffff]">Email:</span>{" "}
               <a
                 href="mailto:contact@anasfarooq.com"
                 className="hover:text-primary-500"
@@ -65,13 +65,13 @@ const EmailSection = () => {
               </a>
             </p>
             <p>
-              <span className="font-medium text-white">Phone:</span>{" "}
+              <span className="font-medium text-[#ffffff]">Phone:</span>{" "}
               <a href="tel:+923468653531" className="hover:text-primary-500">
                 +92-346-8653531
               </a>
             </p>
             <p>
-              <span className="font-medium text-white">Address:</span> Islamabad
+              <span className="font-medium text-[#ffffff]">Address:</span> Islamabad
               Capital Territory, Pakistan, 44000
             </p>
           </div>
@@ -91,7 +91,7 @@ const EmailSection = () => {
 
         {/* Right Side - Send Message Form */}
         <div className="z-10">
-          <h5 className="text-xl font-bold text-white mb-4">
+          <h5 className="text-xl font-bold text-[#ffffff] mb-4">
             Send me a Message
           </h5>
           <form
@@ -104,28 +104,28 @@ const EmailSection = () => {
               name="name"
               placeholder="Your Name"
               required
-              className="w-full px-5 py-3 bg-[#18191E] text-white rounded-lg border-2 border-[#33353F] focus:outline-none focus:border-[#6B8E23] transition-colors placeholder:text-[#ADB7BE]"
+              className="w-full px-5 py-3 bg-[#18191E] text-[#ffffff] rounded-lg border-2 border-[#33353F] focus:outline-none focus:border-[#6B8E23] transition-colors placeholder:text-[#ADB7BE]"
             />
             <input
               type="email"
               name="email"
               placeholder="Your Email"
               required
-              className="w-full px-5 py-3 bg-[#18191E] text-white rounded-lg border-2 border-[#33353F] focus:outline-none focus:border-[#6B8E23] transition-colors placeholder:text-[#ADB7BE]"
+              className="w-full px-5 py-3 bg-[#18191E] text-[#ffffff] rounded-lg border-2 border-[#33353F] focus:outline-none focus:border-[#6B8E23] transition-colors placeholder:text-[#ADB7BE]"
             />
             <textarea
               name="message"
               placeholder="Your Message"
               rows="5"
               required
-              className="w-full px-5 py-3 bg-[#18191E] text-white rounded-lg border-2 border-[#33353F] focus:outline-none focus:border-[#6B8E23] transition-colors placeholder:text-[#ADB7BE] resize-none"
+              className="w-full px-5 py-3 bg-[#18191E] text-[#ffffff] rounded-lg border-2 border-[#33353F] focus:outline-none focus:border-[#6B8E23] transition-colors placeholder:text-[#ADB7BE] resize-none"
             />
             <button
               type="submit"
-              className="w-full relative overflow-hidden group text-white px-6 py-3 rounded-lg"
+              className="w-full relative overflow-hidden group text-[#ffffff] px-6 py-3 rounded-lg"
             >
               <span className="absolute inset-0 bg-[linear-gradient(90deg,#4A6118_0%,#5A7D2A_20%,#6B8E23_35%,#88A454_50%,#6B8E23_65%,#5A7D2A_80%,#4A6118_100%)] bg-[length:200%_100%] animate-gradient-slide"></span>
-              <span className="relative text-white font-medium">Send Message</span>
+              <span className="relative text-[#ffffff] font-medium">Send Message</span>
             </button>
           </form>
         </div>
