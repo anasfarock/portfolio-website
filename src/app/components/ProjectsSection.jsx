@@ -13,6 +13,7 @@ const projectsData = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/anasfarock/portfolio-website",
     previewUrl: "https://anasfarooq.com",
+    showLivePreview: true, // Flag to show live website
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ const projectsData = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/anasfarock/iksu",
     previewUrl: "https://www.iksuconsulting.com/",
+    showLivePreview: true, // Flag to show live website
   },
   {
     id: 3,
@@ -31,6 +33,7 @@ const projectsData = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/anasfarock/zithai",
     previewUrl: "https://zithai.vercel.app/",
+    showLivePreview: true, // Flag to show live website
   },
   {
     id: 4,
@@ -40,6 +43,7 @@ const projectsData = [
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/anasfarock/app-event-management",
     previewUrl: "https://github.com/anasfarock/app-event-management",
+    showLivePreview: false,
   },
   {
     id: 5,
@@ -49,6 +53,7 @@ const projectsData = [
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/anasfarock/login-reactnative",
     previewUrl: "https://github.com/anasfarock/login-reactnative",
+    showLivePreview: false,
   },
   {
     id: 6,
@@ -58,6 +63,7 @@ const projectsData = [
     tag: ["Other"],
     gitUrl: "https://github.com/anasfarock/tradingview-indicator",
     previewUrl: "https://github.com/anasfarock/tradingview-indicator",
+    showLivePreview: false,
   },
   {
     id: 7,
@@ -67,6 +73,7 @@ const projectsData = [
     tag: ["All", "Other"],
     gitUrl: "https://github.com/anasfarock/forestfire-dataset",
     previewUrl: "https://github.com/anasfarock/forestfire-dataset",
+    showLivePreview: false,
   },
 ];
 
@@ -132,6 +139,7 @@ const ProjectsSection = () => {
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
+              showLivePreview={project.showLivePreview}
             />
           </motion.li>
         ))}
