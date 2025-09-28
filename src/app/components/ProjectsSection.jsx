@@ -25,6 +25,15 @@ const projectsData = [
   },
   {
     id: 3,
+    title: "Zithai Sweets Website",
+    description: "A business website for Zithai, showcasing their services and offerings.",
+    image: "/images/projects/7.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/anasfarock/zithai",
+    previewUrl: "https://zithai.vercel.app/",
+  },
+  {
+    id: 4,
     title: "Event Management Application",
     description: "Event management mobile application for managing events and registrations.",
     image: "/images/projects/3.png",
@@ -33,7 +42,7 @@ const projectsData = [
     previewUrl: "https://github.com/anasfarock/app-event-management",
   },
   {
-    id: 4,
+    id: 5,
     title: "User Authentication App",
     description: "User authentication app built with React Native, featuring login and registration.",
     image: "/images/projects/4.png",
@@ -42,16 +51,16 @@ const projectsData = [
     previewUrl: "https://github.com/anasfarock/login-reactnative",
   },
   {
-    id: 5,
+    id: 6,
     title: "Trading View Indicator",
     description: "Trading view indicator based on ICT stratigies for technical analysis.",
     image: "/images/projects/5.png",
-    tag: ["All", "Other"],
+    tag: ["Other"],
     gitUrl: "https://github.com/anasfarock/tradingview-indicator",
     previewUrl: "https://github.com/anasfarock/tradingview-indicator",
   },
   {
-    id: 6,
+    id: 7,
     title: "Forest Fire Dataset",
     description: "Data Analysis - Forest fire dataset for machine learning projects.",
     image: "/images/projects/6.png",
@@ -100,6 +109,11 @@ const ProjectsSection = () => {
           onClick={handleTagChange}
           name="Mobile"
           isSelected={tag === "Mobile"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Other"
+          isSelected={tag === "Other"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
