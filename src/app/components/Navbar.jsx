@@ -31,7 +31,11 @@ const Navbar = () => {
   return (
     <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-50 bg-[#121212]">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
-        <Link href="/" className="flex items-center" aria-label="Go to homepage">
+        <Link
+          href="/"
+          className="flex items-center"
+          aria-label="Go to homepage"
+        >
           <Image
             src="/images/logo.png"
             alt="Anas Farooq Logo"
