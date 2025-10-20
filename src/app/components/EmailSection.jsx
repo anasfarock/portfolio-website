@@ -1,36 +1,54 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useState, useRef } from "react";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 import emailjs from "@emailjs/browser";
+import Turnstile from "react-turnstile";
 
 const EmailSection = () => {
   const form = useRef();
+  const [token, setToken] = useState("");
 
-
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
+    if (!token) {
+      alert("Please complete the CAPTCHA first!");
+      return;
+    }
+
+    try {
+      // Verify token on your backend before sending the email
+      const verifyResponse = await fetch("/api/verify-turnstile", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ token }),
+      });
+
+      const data = await verifyResponse.json();
+
+      if (!data.success) {
+        alert("CAPTCHA verification failed. Please try again.");
+        return;
+      }
+
+      // If passed, then send email
+      await emailjs.sendForm(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         form.current,
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        (result) => {
-          alert("Message sent successfully!");
-        },
-        (error) => {
-          alert("Failed to send message. Please try again.");
-        }
       );
 
-    e.target.reset();
+      alert("Message sent successfully!");
+      e.target.reset();
+      setToken("");
+    } catch (error) {
+      alert("Failed to send message. Please try again.");
+    }
   };
 
   return (
@@ -53,7 +71,9 @@ const EmailSection = () => {
             as soon as possible!
           </p>
 
-          <h5 className="text-xl font-bold text-[#ffffff] mb-3">Contact Details</h5>
+          <h5 className="text-xl font-bold text-[#ffffff] mb-3">
+            Contact Details
+          </h5>
           <div className="text-[#ADB7BE] space-y-2">
             <p>
               <span className="font-medium text-[#ffffff]">Email:</span>{" "}
@@ -71,8 +91,8 @@ const EmailSection = () => {
               </a>
             </p>
             <p>
-              <span className="font-medium text-[#ffffff]">Address:</span> Islamabad
-              Capital Territory, Pakistan, 44000
+              <span className="font-medium text-[#ffffff]">Address:</span>{" "}
+              Islamabad Capital Territory, Pakistan, 44000
             </p>
           </div>
           <div className="socials flex flex-row gap-4 mt-4">
@@ -120,12 +140,19 @@ const EmailSection = () => {
               required
               className="w-full px-5 py-3 bg-[#18191E] text-[#ffffff] rounded-lg border-2 border-[#33353F] focus:outline-none focus:border-[#6B8E23] transition-colors placeholder:text-[#ADB7BE] resize-none"
             />
+            <Turnstile
+              sitekey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY}
+              onVerify={(token) => setToken(token)} // save the verified token
+            />
+
             <button
               type="submit"
               className="w-full relative overflow-hidden group text-[#ffffff] px-6 py-3 rounded-lg"
             >
               <span className="absolute inset-0 bg-[linear-gradient(90deg,#4A6118_0%,#5A7D2A_20%,#6B8E23_35%,#88A454_50%,#6B8E23_65%,#5A7D2A_80%,#4A6118_100%)] bg-[length:200%_100%] animate-gradient-slide"></span>
-              <span className="relative text-[#ffffff] font-medium">Send Message</span>
+              <span className="relative text-[#ffffff] font-medium">
+                Send Message
+              </span>
             </button>
           </form>
         </div>
