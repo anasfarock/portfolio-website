@@ -124,21 +124,21 @@ const EmailSection = () => {
               name="name"
               placeholder="Your Name"
               required
-              className="w-full px-5 py-3 bg-[#18191E] text-[#ffffff] rounded-lg border-2 border-[#33353F] focus:outline-none focus:border-[#6B8E23] transition-colors placeholder:text-[#ADB7BE]"
+              className="w-full px-5 py-3 bg-[#232323] text-[#ffffff] rounded-lg border-2 border-[#33353F] focus:outline-none focus:border-[#6B8E23] transition-colors placeholder:text-[#ADB7BE]"
             />
             <input
               type="email"
               name="email"
               placeholder="Your Email"
               required
-              className="w-full px-5 py-3 bg-[#18191E] text-[#ffffff] rounded-lg border-2 border-[#33353F] focus:outline-none focus:border-[#6B8E23] transition-colors placeholder:text-[#ADB7BE]"
+              className="w-full px-5 py-3 bg-[#232323] text-[#ffffff] rounded-lg border-2 border-[#33353F] focus:outline-none focus:border-[#6B8E23] transition-colors placeholder:text-[#ADB7BE]"
             />
             <textarea
               name="message"
               placeholder="Your Message"
               rows="5"
               required
-              className="w-full px-5 py-3 bg-[#18191E] text-[#ffffff] rounded-lg border-2 border-[#33353F] focus:outline-none focus:border-[#6B8E23] transition-colors placeholder:text-[#ADB7BE] resize-none"
+              className="w-full px-5 py-3 bg-[#232323] text-[#ffffff] rounded-lg border-2 border-[#33353F] focus:outline-none focus:border-[#6B8E23] transition-colors placeholder:text-[#ADB7BE] resize-none"
             />
             <Turnstile
               sitekey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY}
