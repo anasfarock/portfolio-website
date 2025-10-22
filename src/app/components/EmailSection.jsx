@@ -110,14 +110,14 @@ const EmailSection = () => {
         </div>
 
         {/* Right Side - Send Message Form */}
-        <div className="z-10">
-          <h5 className="text-xl font-bold text-[#ffffff] mb-4">
+        <div className="z-10 mb:pt-8 flex flex-col items-center">
+          <h5 className="text-xl font-bold text-[#ffffff] mb-4 text-left">
             Send me a Message
           </h5>
           <form
             ref={form}
             onSubmit={sendEmail}
-            className="flex flex-col space-y-4"
+            className="flex flex-col space-y-4 w-full px-[-70%]"
           >
             <input
               type="text"
@@ -140,10 +140,14 @@ const EmailSection = () => {
               required
               className="w-full px-5 py-3 bg-[#232323] text-[#ffffff] rounded-lg border-2 border-[#33353F] focus:outline-none focus:border-[#6B8E23] transition-colors placeholder:text-[#ADB7BE] resize-none"
             />
-            <Turnstile
-              sitekey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY}
-              onVerify={(token) => setToken(token)} // save the verified token
-            />
+
+            {/* Center the Turnstile captcha */}
+            <div className="flex mb:justify-center">
+              <Turnstile
+                sitekey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY}
+                onVerify={(token) => setToken(token)}
+              />
+            </div>
 
             <button
               type="submit"
